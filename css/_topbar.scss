@@ -1,0 +1,135 @@
+
+
+section.topbar{
+    content: '';
+    height: 12vh;
+    background-color: #000;
+    width: auto;
+    display: flex;
+    
+}
+
+
+
+
+div.left-side{
+    width: 40vw;
+    height: 12vh;
+    content: '';
+    background-color: rgba(255, 166, 0, 0.66);
+    margin-left: 3.3%;
+    display: inline-block;
+    display: flex;
+}
+
+
+div.logo-div{
+    height: 12vh;
+    width: 150px;
+    background-color: rgba(255, 0, 0, 0.493);
+    display: inline-block;
+    content: '';
+}
+
+
+div.dropdown-div{
+    content: '';
+    width: 100px;
+    height: fit-content;
+    height: -webkit-fit-content;
+    padding: 5%;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    
+}
+
+div.searchbar-div{
+    content: '';
+    background-color: rgba(199, 17, 199, 0.756);
+    display: inline-block;
+    height: fit-content;
+    height: -webkit-fit-content;
+    width:  fit-content;
+    width: -webkit-fit-content;
+    margin: auto;
+    padding: 2% 8%;
+}
+
+div.right-side{
+    content: '';
+    background-color: rgba(255, 255, 0, 0.622);
+    width: 20vw;
+    height: 12vh;
+    margin-left: auto;
+    display: flex;
+    
+}
+
+
+svg#bell{
+    display: inline-block;
+    position: relative;
+    width:40px;
+    height:35px;
+    margin-left: auto;
+    margin-top: 7%;
+    
+}
+
+svg#bell > g > path {
+    fill: #000;
+}
+
+  ellipse#notif-dot {
+    
+    visibility: hidden;
+}
+
+
+
+div.user-id{
+    display: flex;
+    background-color: rgba(0, 128, 0, 0.777);
+    content: '';
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    margin: auto 0;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    // padding: 7%;
+    // height: 12vh;
+    // width:  fit-content;
+    // width: -webkit-fit-content;
+}
+
+
+div.user-id > span {
+    
+    height: fit-content;
+    height: -webit-fit-content;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-right: 30%;
+}
+
+div.user-id > span:nth-child(2) {
+    
+    height: fit-content;
+    height: -webit-fit-content;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+    margin-right: 30%;
+}
+
+div.user-id > span:nth-child(1){
+    margin-bottom: 5%;
+}
