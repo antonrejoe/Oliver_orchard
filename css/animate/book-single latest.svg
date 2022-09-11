@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="book-single 1" clip-path="url(#clip0_6_10)">
+<g id="Group">
+<path id="round" d="M256 512C397.385 512 512 397.385 512 256C512 114.615 397.385 0 256 0C114.615 0 0 114.615 0 256C0 397.385 114.615 512 256 512Z" />
+<path id="shadow" d="M512 256C512 255.884 511.996 255.769 511.996 255.653L375.34 119L100.12 374.733L236.665 511.276C243.047 511.753 249.493 512 255.997 512C397.384 512 512 397.385 512 256Z" fill="url(#paint0_linear_6_10)"/>
+<g id="book-cover">
+<path id="vector" d="M100.124 155.533V374.733H212.708C218.736 385.51 235.359 393 256 393C276.641 393 293.264 385.51 299.292 374.733H411.876V155.533H100.124V155.533Z" fill="#545454"/>
+<path id="Vector" d="M411.876 155.533V374.733H299.292C293.264 385.51 276.641 393 256 393V155.533H411.876Z" fill="#545454"/>
+</g>
+<g id="paper">
+<path id="vector_2" d="M270.43 119L256 133.43L241.57 119H136.658V338.2H233.897L256 360.302L278.103 338.2H375.342V119H270.43Z" />
+<path id="Vector_3" d="M375.342 119V338.2H278.103L256 360.302V133.43L270.43 119H375.342Z" />
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_6_10" x1="183.121" y1="179" x2="428.996" y2="452.003" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF0000"/>
+<stop offset="1" stop-color="#4F3D3D" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_6_10">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>

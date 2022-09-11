@@ -1,0 +1,40 @@
+
+
+
+
+.sec-3-main{
+    background-color: white;
+    height: auto;
+    width: auto;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.overall-stats-of-users{
+    background-color: aqua ;
+    height: 340px;
+    width: 290px;
+    margin: auto;
+   
+}
+
+
+section.sec-3{
+    background-color: rgba(251, 152, 208, 0.647);
+    height: auto;
+    width: auto;
+    
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    display: grid;
+
+
+    // when it is being a parent
+    grid-template-rows: auto auto ;
+}
+
+

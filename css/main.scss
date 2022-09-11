@@ -7,8 +7,11 @@
 @import './sidebar';
 @import './topbar';
 @import './footer';
+@import './animate/sec-1-anim.scss';
+@import './animate/stats-svg-animate';
+@import './animate/book-animate';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
 
@@ -19,3 +22,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+:root{
+    --primary-color: #0aa1dd;
+    --secondary-color:#2155CD;
+    --primary-bg-color:rgba(255, 255, 255, 0.6);
+    --secondary-bg-color:#E8F9FD;
+    
+}
