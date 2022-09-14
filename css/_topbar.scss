@@ -1,5 +1,8 @@
 
-
+::selection{
+    background-color: #0aa1dd7d;
+    color: black;
+}
 
 
 
@@ -72,11 +75,20 @@ div.searchbar-div{
 
 }
 
+.searchbar-div >input:active{
+    border: 3px #0aa1dd solid;
+    outline: none;
+}
+.searchbar-div >input:focus{
+    border: 3px #0aa1dd solid;
+    outline: none;
+}
 .searchbar-div > input{
-    border-radius: 2rem 0 0 2rem;
+    border-radius: 0.2rem 0 0 0.2rem;
     border: none;
     height: 45px;
     width: 300px;
+    padding: 2%;
     // background-color: var(--secondary-bg-color);
     // background-image:  ;
     
@@ -85,6 +97,13 @@ div.searchbar-div{
     
 }
 
+ .searchbar-div > input[type=text] {
+    margin-left: 10%;
+    color: orange;
+    padding: 100px;
+
+}
+ 
 
 .searchbar-div > button > i{
     color: #fff;
@@ -94,7 +113,7 @@ div.searchbar-div{
     border: none;  
     background-color: #0aa1dd; 
     width: 60px;
-    border-radius: 0 2rem 2rem 0;
+    border-radius: 0 0.2rem 0.2rem 0;
 }
 
 .searchbar-div > button:hover{
@@ -105,6 +124,10 @@ div.searchbar-div{
     border: solid gray  2px;
 }
 
+.searchbar-div input[type=search]{
+    padding: 20px;           
+	line-height: 3;  
+}
 
 div.right-side{
     content: '';

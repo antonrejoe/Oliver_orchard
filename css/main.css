@@ -684,6 +684,16 @@ section.sidebar {
   z-index: 1000;
 }
 
+::-moz-selection {
+  background-color: rgba(10, 161, 221, 0.4901960784);
+  color: black;
+}
+
+::selection {
+  background-color: rgba(10, 161, 221, 0.4901960784);
+  color: black;
+}
+
 section.topbar {
   content: "";
   width: auto;
@@ -739,12 +749,29 @@ div.searchbar-div {
   padding: 2% 8%;
 }
 
+.searchbar-div > input:active {
+  border: 3px #0aa1dd solid;
+  outline: none;
+}
+
+.searchbar-div > input:focus {
+  border: 3px #0aa1dd solid;
+  outline: none;
+}
+
 .searchbar-div > input {
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 0.2rem 0 0 0.2rem;
   border: none;
   height: 45px;
   width: 300px;
+  padding: 2%;
   background-color: rgba(128, 128, 128, 0.097);
+}
+
+.searchbar-div > input[type=text] {
+  margin-left: 10%;
+  color: orange;
+  padding: 100px;
 }
 
 .searchbar-div > button > i {
@@ -755,7 +782,7 @@ div.searchbar-div {
   border: none;
   background-color: #0aa1dd;
   width: 60px;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 0 0.2rem 0.2rem 0;
 }
 
 .searchbar-div > button:hover {
@@ -764,6 +791,11 @@ div.searchbar-div {
 
 .searchbar-div > input:active {
   border: solid gray 2px;
+}
+
+.searchbar-div input[type=search] {
+  padding: 20px;
+  line-height: 3;
 }
 
 div.right-side {
@@ -1200,7 +1232,8 @@ body {
   color: #000;
   z-index: 10;
   list-style-type: none;
-  background-color: rgba(10, 161, 221, 0.2705882353);
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.311);
   position: absolute;
   border-radius: 0.2rem;
   translate: 20px 10px;
@@ -1215,16 +1248,16 @@ body {
 }
 
 .li_style {
-  border-radius: 0.2rem;
   padding: 0 20px;
   color: #000;
   transition: all 0.5s ease;
 }
+
 .li_style:hover {
   scale: 1.15;
 }
 
 .hello_li:hover {
-  background-color: rgba(145, 140, 140, 0.353);
+  background-color: rgba(145, 140, 140, 0.511);
   color: #000;
 }/*# sourceMappingURL=main.css.map */
