@@ -14,7 +14,7 @@ section.topbar{
 
 
 div.left-side{
-    width: 40vw;
+    width: 50vw;
     // height: 12vh;
     content: '';
     // background-color: rgba(255, 166, 0, 0.66);
@@ -31,7 +31,7 @@ div.logo-div{
     // background-color: rgba(255, 0, 0, 0.493);
     display: inline-block;
     content: '';
-    overflow: hidden;
+    overflow: visible;
 }
 
 div.logo-div > img {
@@ -44,9 +44,9 @@ div.logo-div > img {
 }
 
 
+
 div.dropdown-div{
     content: '';
-    width: 200px;
     height: fit-content;
     height: -webkit-fit-content;
     // padding: 5%;
@@ -55,14 +55,14 @@ div.dropdown-div{
     margin: auto;
     display: flex;
     border-radius: 0.6rem;
-    margin-left: 7%;
+    margin-left: 15%;
     // box-shadow: rgba(87, 87, 87, 0.762) 2px 2px 2px;
 }
 
 div.searchbar-div{
     content: '';
     
-    display: inline-block;
+    display: flex;
     height: fit-content;
     height: -webkit-fit-content;
     width:  fit-content;
@@ -73,30 +73,46 @@ div.searchbar-div{
 }
 
 .searchbar-div > input{
-    border-radius: 0.6rem;
+    border-radius: 2rem 0 0 2rem;
     border: none;
     height: 45px;
     width: 300px;
     // background-color: var(--secondary-bg-color);
-    box-shadow: rgb(119, 119, 119) 2px 2px 2px;
     // background-image:  ;
     
    
     background-color: rgba(128, 128, 128, 0.097);
     
 }
+
+
+.searchbar-div > button > i{
+    color: #fff;
+}
+
+.searchbar-div > button{
+    border: none;  
+    background-color: #0aa1dd; 
+    width: 60px;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.searchbar-div > button:hover{
+    cursor: pointer;
+
+}
 .searchbar-div > input:active{
     border: solid gray  2px;
 }
 
+
 div.right-side{
     content: '';
     // background-color: rgba(255, 255, 0, 0.622);
-    width: 20vw;
     height: 12vh;
     margin-left: auto;
     display: flex;
-    
+    width: 20vw;    
 }
 
 
@@ -145,15 +161,12 @@ div.user-id{
     // width: -webkit-fit-content;
 }
 
-div.user-id > svg{
+div.user-id > img{
     margin-right: 15%;
+    margin-bottom: 10%;
 }
 div.user-id > span {
     
-    height: fit-content;
-    height: -webit-fit-content;
-    width: fit-content;
-    width: -webkit-fit-content;
     display: flex;
     position: relative;
     margin: auto;
@@ -186,4 +199,3 @@ div.user-id > span:nth-child(2) {
 div.user-id > span:nth-child(1){
     margin-bottom: 5%;
 }
-

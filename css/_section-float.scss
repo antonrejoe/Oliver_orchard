@@ -1,0 +1,44 @@
+
+section.sec-float > i{
+    transition: all 0.5s ease;
+    color: #fff;
+    
+    margin: 40% 0%;
+    border-radius: 0.6rem;
+    text-align: center;
+    padding: 4px ;
+    z-index: 10;
+    overflow: visible;
+    margin: auto;
+    margin: 50% 10%;
+    padding: 10% 0;
+
+}
+
+
+
+section.sec-float > i:hover{
+    background-color:#fff; 
+    // border: solid #000 2px;
+    color: #2155CD;
+    scale: 1.2;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.268);
+}
+
+
+
+section.sec-float{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 4vw;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    background-color: #2155CD;
+    padding-left: 1%;
+    border-radius: 0 2rem 2rem 0;
+    padding-right:1%;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.215);
+}
+

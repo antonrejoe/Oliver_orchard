@@ -10,15 +10,17 @@
 @import './animate/sec-1-anim.scss';
 @import './animate/stats-svg-animate';
 @import './animate/book-animate';
+@import './section-float';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 
 
 
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: visible;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -29,3 +31,122 @@
     --secondary-bg-color:#E8F9FD;
     
 }
+
+
+body{
+    transition: all 0.5s ease;
+
+}
+
+
+.hero_alom{
+    color: #ff0000;
+    // margin-top: 200%;
+}
+
+.dropdown:hover{
+    background-color: #0aa1dd53;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.dropdown{
+    padding: 10px;
+    border-radius: 0.6rem;
+}
+
+
+.btn:hover{
+    background-color: #ffff;
+    outline: #2155CD solid 2px;
+    transition: all 0.5s ease;
+    color: #000;
+
+}
+
+.btn{
+    transition: all 1s ease;
+    cursor: pointer;
+    background-color: #2155CD;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-svg{
+
+    rotate: 180deg;
+
+    animation: rotate-dropdown 0.3s forwards;
+}
+
+@keyframes rotate-dropdown {
+    
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 180deg;
+    }
+}
+@keyframes rotate-dropdown-opp {
+    
+
+    0%{
+        rotate: 180deg;
+    }
+
+    100%{
+        rotate: 0deg;
+    }
+
+    
+}
+
+.dropdown-svg{
+    transition: all 1s ease;
+}
+
+
+
+.ul_styling_dropdown{
+    color: #000;
+    z-index: 10;
+    list-style-type: none;
+    background-color: #0aa1dd45;
+    position: absolute;
+    border-radius: 0.2rem;
+    translate: 20px 10px;
+    transition: all 0.2s ease;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.427);
+}
+
+.ul-hide{
+    opacity: 0;
+    visibility: hidden;
+    translate: 20px  -20px;   
+}
+
+
+.li_style{
+    border-radius: 0.2rem;
+    padding: 0 20px;
+    color: #000;
+    transition: all 0.5s ease;
+
+}
+
+
+.li_style:hover{
+    scale: 1.15;
+}
+
+
+.hello_li:hover{
+    background-color: rgba(145, 140, 140, 0.353);
+    color: #000;
+}
+
+
+
+

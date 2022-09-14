@@ -1,7 +1,8 @@
+/// <reference path="../typings/globals/jquery/index.d.ts" />
 
 
 let month = [];
-let  week = ['Sun', 'Mon', 'Tue', 'Wed','Thu','Fri','Sat']
+let  week = ['Sun', 'Mon', 'Tue', 'Wed','Thu','Fri','Sat'];
 
 
 
@@ -131,10 +132,98 @@ for (let i = 0; i < sidebar_icons.length; i++) {
     
     document.body.addEventListener('scroll', function () {
         
-        
-        console.log(sidebar_icons[i].style);
+        $('')
+        // console.log(sidebar_icons[i].style);
 
     });
 
 }
+
+
+// creating dropdown
+
+// selection
+// ul
+// li
+
+
+let dropdown = document.querySelectorAll('.dropdown');
+
+// console.log(dropdown);
+
+
+
+function create_ul() {
+    let ul = document.createElement('ul');
+    ul.classList.add('ul-hide');
+    ul.classList.add('ul_styling_dropdown');
+    let li = document.createElement('li');
+    let li_1 = document.createElement('li');
+    let li_2 = document.createElement('li');
+
+    let li_list = [li , li_1 , li_2];
+
+    li_list.forEach(element => {
+        element.textContent = 'item';
+        ul.append(element);
+        element.style.margin = '10px'; 
+        element.classList.add('li_style');
+        element.classList.add('hello_li');
+    });
+    
+    return ul
+}
+
+
+for (let i = 0; i < dropdown.length; i++) {
+    const element = dropdown[i];
+    let current_child = new create_ul();
+    element.appendChild(current_child);
+    
+}
+
+
+document.querySelector('span.dropdown:nth-of-type(2) > ul').style.padding = '15px';
+
+for (let i = 0; i < dropdown.length; i++) {
+    const element = dropdown[i];
+    
+    let dropdown_ul_s = []
+    
+    dropdown_ul_s.push(document.querySelectorAll('span.dropdown >ul'));
+    // console.log(dropdown_ul_s);
+
+
+}
+
+let z = [];
+z.push($('.dropdown').children)
+
+console.log(z);
+
+let see = $('.dropdown').children('ul');
+
+
+
+
+
+$('.dropdown-2' ).click(function () {
+        
+        $('.dropdown-2 > ul').toggleClass('ul-hide');
+    
+});
+
+$('.dropdown-1' ).click(function () {
+        
+        $('.dropdown-1 > ul').toggleClass('ul-hide');
+    
+});
+
+$('.dropdown-3' ).click(function () {
+        
+        $('.dropdown-3 > ul').toggleClass('ul-hide');
+    
+});
+
+
 
