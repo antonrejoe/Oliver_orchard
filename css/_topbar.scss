@@ -1,8 +1,4 @@
 
-::selection{
-    background-color: #0aa1dd7d;
-    color: black;
-}
 
 
 
@@ -16,7 +12,7 @@ section.topbar{
 }
 
 
-div.left-side{
+.left-side{
     width: 50vw;
     // height: 12vh;
     content: '';
@@ -28,23 +24,8 @@ div.left-side{
 }
 
 
-div.logo-div{
-    // height: 12vh;
-    width: 100px;
-    // background-color: rgba(255, 0, 0, 0.493);
-    display: inline-block;
-    content: '';
-    overflow: visible;
-}
 
-div.logo-div > img {
-    display: inline-block;
-    margin: auto;
-    width:70px;
-     height:70px;
-     margin-top: 10px;
-     margin-left: 15px;
-}
+
 
 
 

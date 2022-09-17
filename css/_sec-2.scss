@@ -115,7 +115,6 @@ section.sec-2{
 
 
 .sec-2-mid > div {
-    background-color: #fff;
     @include height-width;
     margin: auto;
     // padding: 2% 4%;
@@ -132,12 +131,17 @@ section.sec-2{
 } 
 .sec-2-mid > div:nth-child(1) {
     margin: 12% 1%;
+    background-color: #fff;
+
     // display: none;
 } 
 
 .sec-2-mid > div:nth-child(2) > svg{
-    margin-left: auto;
-
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 8%;
     // display: none;
 } 
 
@@ -221,7 +225,6 @@ section.sec-2{
 
 
 .sec-2-mid > div:nth-child(2) {
-    background-color: #fff;
     @include height-width;
     margin: auto;
     // padding: 2% 4%;
