@@ -245,27 +245,25 @@ function check_presence(obj , list) {
 
 let topbar_children  = $('.topbar').children(); 
 
-var media_width_600px = window.matchMedia("(max-width:600px)").matches;
+const media_width_600px = window.matchMedia("(max-width:600px)").matches;
 
-var media_width_grt_600px = window.matchMedia("(min-width:600px)").matches;
+const media_width_grt_600px = window.matchMedia("(min-width:600px)").matches;
+const dropdown_div = document.createElement('div');
+const div_left = topbar_children[0];
 
 
 
 
  function go () {
     if (media_width_600px ) {
-        var div_left = topbar_children[0];
         $(topbar_children[0]).detach();
-        var dropdown_div = document.createElement('div');
-        dropdown_div.classList.add('left-side');
-        dropdown_div.appendChild(div_left);
         dropdown_div.classList.add('dropdown_content_500px');
-        console.log(topbar_children);
+        dropdown_div.appendChild(div_left);
+
         document.body.prepend(dropdown_div);
 
     } if(media_width_grt_600px ){
-       
-        dropdown_div.removeChild(div_left);
+       console.log('hello');
     }
        
     
